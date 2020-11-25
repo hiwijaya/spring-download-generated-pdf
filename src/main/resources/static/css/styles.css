@@ -1,0 +1,23 @@
+@page {
+    size: a4;
+    margin: 0;
+    padding: 0;
+}
+
+.report {
+    font-family: helvetica;
+}
+
+.header {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 50px;
+    background-color: #B6E7D6;
+}
+
+.content {
+    padding: 50px;
+}
+.content h1 {
+    font-size: 24px;
+}
