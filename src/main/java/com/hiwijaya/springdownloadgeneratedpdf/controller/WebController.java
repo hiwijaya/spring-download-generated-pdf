@@ -38,7 +38,9 @@ public class WebController {
     @GetMapping("/report")
     public ResponseEntity<?> getReport() throws IOException {
 
-        byte[] pdfBytes = reportService.generateReport("Happy Indra Wijaya");
+        String name = "Happy Indra Wijaya";
+
+        byte[] pdfBytes = reportService.generateReport(name);
 
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_PDF)
